@@ -171,3 +171,23 @@
     justify-content: center;
 
 }
+
+/* about */
+
+.aboutpage{
+    margin-top: 2vh;
+    width: 100vw;
+    height: 80vw;
+    background-color: blueviolet;
+}
+
+/* about end */
+
+.footer{
+    margin-top: 2vh;
+    width: 100vw;
+    height: 50vw;
+    background-color: burlywood ;
+
+}
+
