@@ -21,6 +21,8 @@ white #ebf7fd
 }
 body{
     background-color: #233142 ;
+    display: flex;
+    flex-direction: column;
 
 }
 .navbar{
@@ -30,9 +32,21 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: sticky;
+    top: 0;
 
 
-
+}
+.navbarblur{
+    background-color: rgba(54, 91, 131, 0.8);
+    
+    width: 100vw;
+    height: 3.5vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
 }
 
 #logo{
@@ -55,12 +69,14 @@ body{
 
 #navbtn{
     font-family: 'Outfit' , sans-serif;
-    background-color: #36506C ;
+    background-color: rgba(54, 80, 108, 0.0 ) ;
     border: none;
     font-size: 1.1rem ;
     color: #EBF7FD ;
     font-weight: 100;
     transition: 0.2s;
+    display: flex;
+    align-items: center;
 }
 
 #navbtn:hover{
@@ -94,13 +110,11 @@ body{
     height: 100%;
     display: flex;
     justify-content: space-around;
-    border: 1px solid brown;
-
 
 }
 
 #intro{
-    width: 55%;
+    width: 45%;
     height: 100%;
     font-family: 'Outfit' ;
     display: flex;
@@ -147,7 +161,9 @@ body{
 
  .mainword{
     color: #A5DEF1;
-    font-size: 3.2rem;;
+    font-size: 3.2rem;
+    display: flex;
+    justify-content: flex-start;
 }
 .secondheader{
     font-size: 1.6rem;
@@ -215,88 +231,160 @@ body{
 
 }
 .belowphoto{
-    width: 30vw;
-    height: 30vw;
+    width: 32vw;
+    height: 31vw;
     border-radius: 16vw  10vw ;
     background-color: #36506C;
 }
-
+.aboutcontainer{
+    width: 100% ;
+    background-color:#233142;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: 'Outfit';
+    color: #EBF7FD;
+    font-weight: 100;
+}
 .about{
     margin-top: 3vh;
     width: 100vw;
     height: 70vw;
-    background-color: aquamarine;
+    background-color:#233142;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     
 
 
 }
+.aboutII{
+    margin-top: 3vh;
+    width: 100vw;
+    height: 70vw;
+    background-color:#233142;
+    display: flex;
+    justify-content: center;
+}
 .bigboy{
-    width: 90%;
+    width: 85%;
     height: 99.7%;
 }
 #midboy{
     width: 100%;
     height: 50%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
 
 }
 #midboII{
     width: 100%;
     height: 50%;
-     display: flex;
-    justify-content: space-between;
+    display: flex;
+    justify-content: space-evenly  ;
 
 
 
 }
 #text{
-    width: 55%;
-    height: 100%;
-    border: 1.2px solid silver;   
+    width: 45%;
+    height: 50%;
+    color: #EBF7FD;
+    display: flex;  
+    justify-content: flex-end;
+
 }
+.midtext{
+    margin-top: 2rem;
+    font-family: 'Outfit';
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
 #midboyimg{
     width: 45%;
     height: 100%;
-    border: 1.6px solid yellowgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#divimgrec{
+    width: 30vw;
+    height: 30vw;
+    border-radius: 10vw  16vw ;
+    background-color: #36506C;
+
 }
 #midboyIIimg{
     width: 45%;
     height: 100%;
-    border: 1.6px solid black;  
+    display: flex;
+    justify-content: center;
+    align-items: center;  
 }
 #textII{
-    width: 55%;
-    height: 100%;
-    border: 1px solid blueviolet;
+    width: 38%;
+    height: 60%;
+    font-family: 'Outfit';
+    font-size: 1.8rem;
+    color: #EBF7FD;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 .services{
     margin-top: 2vh;
     width: 100vw;
     height: 80vw;
-    background-color: aquamarine;
+    background-color: #233142;
     display: flex;
     justify-content: center;
 
 
 }
 
+
 .cards{
     width: 90vw;
-    height: 79vw;
-    border: 3px solid silver;
+    height: 63vw;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
 }
 #small{
     width: 20vw;
-    height: 30vw;
-    border: 1px solid gray;
+    height: 15vw;
+    background-color: #36506C;
+    border-radius: 1vw ;    
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
+    font-family: 'Outfit';
+    font-weight: 150;
+    color: #EBF7FD;
+    transition: 0.1s;
+    
+}
+#small:hover{
+    transform: scale(1.05);
+    background-color: rgba(54, 91, 131, 0.25);
+    border: .25rem solid #A5DEF1;
+    border-radius: 2vw ;    
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Outfit';
+    font-weight: 150;
+    color: #EBF7FD;
+    transition: 0.4s;
+}
+#small > h4{
+    font-weight: 100;
+    font-size: 1.5rem;
 }
 #smlcards{
     display: flex;
@@ -320,12 +408,31 @@ body{
     margin-top: 1.3vh;
     width: 80vw;
     height: 25vw;
-    border: 4px solid wheat;
+    background-color: #36506C;
+    border-radius: 1rem;
     display: flex;
     justify-content: center;
+    transition: 0.3s;
+    align-items: center;
+}
+#big > h4{
+    margin-top: 3vh;
+    font-family: 'outfit';
+    font-size: 2rem;
+    color: #EBF7FD;
+}
+#big:hover{
+    margin-top: 1.3vh;
+    transform: scale(1.03);
+    border-radius: 1.5rem ;
+    border: .1rem solid #A5DEF1;
+    background-color: rgba(54, 91, 131, 0.25);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    transition: 0.3s;
 
 }
-
 /* about */
 
 .aboutpage{
@@ -340,7 +447,7 @@ body{
 .footer{
     margin-top: 2vh;
     width: 100vw;
-    height: 30vw;
+    height: 4vw;
     background-color: burlywood ;
 
 }

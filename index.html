@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/ce59223707.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
     <title>Saagii</title>
 </head>
 <body>
@@ -19,11 +19,11 @@
             </div>
 
             <div id="button">
-                <button id="navbtn">home</button>
-                <button id="navbtn">about</button>
-                <button id="navbtn">experience</button>
-                <button id="navbtn">services</button>
-                <button id="navbtn">contact me</button>
+                <div id="navbtn">home</div>
+                <div id="navbtn">about</div>
+                <!-- <div id="navbtn">experience</div> -->
+                <div id="navbtn">services</div>
+                <div id="navbtn">contact me</div>
 
             </div>
        
@@ -61,7 +61,7 @@
 
             <div id="photo">
                 <div class="belowphoto"></div>
-                <div class="belowphotoII"></div>
+                <div class="belowphotoII"> <img src="" alt=""></div>
             </div>
         </div>
     </section>
@@ -69,21 +69,37 @@
 
 <!-- about section -->
     <section class="about">
-        <div class="bigboy">
-            <div id="midboy">
-                <div id="text"></div>
-
-                <div id="midboyimg"></div>
-            </div>
-
-            <div id="midboII">
-                <div id="midboyIIimg"></div>
-
-                <div id="textII"></div>
-                
-            </div>
+        <div class="aboutcontainer">
+            <h1>About me</h1>
         </div>
-    </section>
+        <div class="aboutII">
+            
+                    <div class="bigboy">
+                        <div id="midboy">
+                            <div id="midboyimg">
+                                <div id="divimgrec"></div>
+                            </div>
+                            <div id="text">
+                                
+                                <P class="midtext">Hello! My name is Saagii and I am a front    end developer based in UB. I have always been passionate about web developing.
+
+                                </P>
+                            </div>
+
+                        
+                        </div>
+
+                        <div id="midboII">
+                            <div id="textII">
+                                I offer a range of responsive webpage app , including source code , website design and hosting. I am passionate about working with small businesses and startups to help them establish a strong visual identity and stand out in their respective industries.
+                            </div>
+                            <div id="midboyIIimg">
+                                <div class="belowphoto"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
 <!-- about section end -->
 
 <!-- experience section -->
@@ -94,15 +110,28 @@
         <div class="cards">
 
             <div id="smlcards">
-                <div id="small">web page</div>
-                <div id="small">web design</div>
-                <div id="small"> logo design</div>
+                <div id="small">
+                    
+                    <h4>web page</h4>
+                    <p>how about i make you some web</p>
+                </div>
+                <div id="small">
+                    <h4>web design</h4>
+                    <p>everyone likes sick looking web</p>    
+                </div>
+                <div id="small"> 
+                    <h4>logo design</h4>
+                    <p>if you know what i mean</p>
+                </div>
             </div>
 
             <div id="bigcards">  
                 <div id="bgcards">
-                    <div id="big">One* bundle</div>
-                    <div id="big">Two* bundle</div>
+                    <div id="big">
+                        <h4>One+ bundle</h4>
+                    </div>
+                    <div id="big">
+                        <h4>Two+  bundle</h4> </div>
                 </div>
             </div>      
         </div>
@@ -114,7 +143,7 @@
 
 <!-- servisec section end -->
 
-<!-- about section -->
+<!-- contact section -->
 
     <section class="aboutpage">
 
@@ -122,7 +151,7 @@
 
     </section>
 
-<!-- about section end -->
+<!-- contact end -->
 
 <!-- footer -->
 
@@ -134,6 +163,6 @@
 
 <!-- footer ends -->
 
-
+<script src="./script.js"></script>    
 </body>
 </html>
