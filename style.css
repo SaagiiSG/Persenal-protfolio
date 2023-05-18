@@ -1,12 +1,12 @@
 /* color
 
-darkblue #233142
+darkblue #233142 35, 49, 66
 
-lighter blue #36506c
+lighter blue #36506c 54, 80, 108 
 
-light blue #a5def1
+light blue #a5def1  165, 222, 241 
 
-white #ebf7fd
+white #ebf7fd 235, 247, 253 
 
 
 
@@ -334,10 +334,20 @@ body{
     justify-content: flex-start;
     align-items: center;
 }
+.srvcs{
+    margin-top: 10vh    ;
+    width: 100%;
+    font-family: 'Outfit';
+    color: #EBF7FD;
+    font-size: 2.5rem;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+}
 .services{
-    margin-top: 2vh;
+    margin-top: 10vh;
     width: 100vw;
-    height: 80vw;
+    height: 70vw;
     background-color: #233142;
     display: flex;
     justify-content: center;
@@ -353,13 +363,15 @@ body{
     justify-content: space-around;
     flex-direction: column;
 }
-#small{
+
+/* ================================cards / webpage ===================================== */
+.smallwebpageimg{
     width: 20vw;
     height: 15vw;
-    background-color: #36506C;
+    background-image: url(https://github.com/bedimcode/responsive-portfolio-website-patrick/blob/main/assets/img/project-img-1.jpg?raw=true);
     border-radius: 1vw ;    
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     flex-direction: column;
     align-items: center;
     font-family: 'Outfit';
@@ -368,13 +380,88 @@ body{
     transition: 0.1s;
     
 }
-#small:hover{
+#smallwebpage{
+    width: 20vw;
+    height: 15vw;
+    background: linear-gradient(180deg, rgba(0,0,0,0), rgba(165, 222, 241 , .2)); 
+    border-radius: 1vw ;    
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Outfit';
+    font-weight: 150;
+    color: #EBF7FD;
+    transition: 0.1s;
+    
+}
+#smallwebpage:hover{
     transform: scale(1.05);
-    background-color: rgba(54, 91, 131, 0.25);
-    border: .25rem solid #A5DEF1;
+    
+    background: linear-gradient(180deg, rgba(255,0,0,0), rgba(165, 222, 241 , .5));
+  
     border-radius: 2vw ;    
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Outfit';
+    font-weight: 150;
+    color: #EBF7FD;
+    transition: 0.4s;
+    }
+    .smallwebpageimg:hover{
+        transform: scale(1.05);
+        background-image: url(https://github.com/bedimcode/responsive-portfolio-website-patrick/blob/main/assets/img/project-img-1.jpg?raw=true);
+        border-radius: 2vw ;    
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Outfit';
+        font-weight: 150;
+        color: #EBF7FD;
+        transition: 0.4s;
+        }
+/* =====================================cards / webpage end =========================================== */
+/* ========================= cards / wbedesign =================================================== */
+.smallwebdesignimg{
+    width: 20vw;
+    height: 15vw;
+    background-image: url(https://github.com/bedimcode/responsive-portfolio-website-patrick/blob/main/assets/img/project-img-5.jpg?raw=true);
+    object-fit: scale-down;
+    border-radius: 1vw ;    
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Outfit';
+    font-weight: 150;
+    color: #EBF7FD;
+    transition: 0.1s;
+    
+}
+#smallwebdesign{
+    width: 20vw;
+    height: 15vw;
+    background: linear-gradient(180deg, rgba(0,0,0,0), rgba(165, 222, 241 , .2)); 
+    border-radius: 1vw ;    
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Outfit';
+    font-weight: 150;
+    color: #EBF7FD;
+    transition: 0.1s;
+    
+}
+#smallwebdesign:hover{
+    transform: scale(1.05);
+    background: linear-gradient(180deg, rgba(0,0,0,0), rgba(165, 222, 241 , .5)); 
+    border-radius: 2vw ;    
+    display: flex;
+    justify-content: flex-start;
     flex-direction: column;
     align-items: center;
     font-family: 'Outfit';
@@ -382,7 +469,90 @@ body{
     color: #EBF7FD;
     transition: 0.4s;
 }
-#small > h4{
+.smallwebdesignimg:hover{
+    transform: scale(1.05);
+    background-image: url(https://github.com/bedimcode/responsive-portfolio-website-patrick/blob/main/assets/img/project-img-5.jpg?raw=true);
+    border-radius: 2vw ;    
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Outfit';
+    font-weight: 150;
+    color: #EBF7FD;
+    transition: 0.4s;
+    }
+/* ========================== cards / webdesign end========================================================================== */
+
+/* ========================== cards / logodesign ========================================================== */
+.smalllogoimg{
+    width: 20vw;
+    height: 15vw;
+    background-image: url(https://github.com/bedimcode/responsive-portfolio-website-patrick/blob/main/assets/img/project-img-3.jpg?raw=true);
+    object-fit: scale-down;
+    border-radius: 1vw ;    
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Outfit';
+    font-weight: 150;
+    color: #EBF7FD;
+    transition: 0.1s;
+    
+}
+#smalllogo{
+    width: 20vw;
+    height: 15vw;
+    background: linear-gradient(180deg, rgba(0,0,0,0), rgba(165, 222, 241 , .3)); 
+    border-radius: 1vw ;    
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Outfit';
+    font-weight: 150;
+    color: #EBF7FD;
+    transition: 0.4s;
+    
+}
+
+
+#smalllogo:hover{
+    transform: scale(1.05);
+    background: linear-gradient(180deg, rgba(0,0,0,0), rgba(165, 222, 241 , .5)); 
+    border-radius: 2vw ;    
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Outfit';
+    font-weight: 150;
+    color: #EBF7FD;
+    transition: 0.4s;
+}
+.smalllogoimg:hover{
+    transform: scale(1.05);
+    background-image: url(https://github.com/bedimcode/responsive-portfolio-website-patrick/blob/main/assets/img/project-img-3.jpg?raw=true);
+    object-fit: scale-down;
+    border-radius: 2vw ;    
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Outfit';
+    font-weight: 150;
+    color: #EBF7FD;
+    transition: 0.1s;
+    
+}
+/* ===================== cards / logodesign end================================================================================= */
+/* .imgI{
+    width: 100%;
+    height: 100%;
+} */
+.smlwrd{
+    margin-top: 1.5vh;
     font-weight: 100;
     font-size: 1.5rem;
 }
@@ -415,7 +585,7 @@ body{
     transition: 0.3s;
     align-items: center;
 }
-#big > h4{
+.lol{
     margin-top: 3vh;
     font-family: 'outfit';
     font-size: 2rem;
@@ -425,9 +595,9 @@ body{
     margin-top: 1.3vh;
     transform: scale(1.03);
     border-radius: 1.5rem ;
-    border: .1rem solid #A5DEF1;
-    background-color: rgba(54, 91, 131, 0.25);
-    border-radius: 1rem;
+    border: .05rem solid #A5DEF1;
+    background: linear-gradient( rgba(54, 80, 108, 0.5 ), rgba(165, 222, 241,  0.3), rgba(54, 80, 108, 0.5 ) );
+    font-size: 2.6rem;
     display: flex;
     justify-content: center;
     transition: 0.3s;
@@ -435,13 +605,30 @@ body{
 }
 /* about */
 
-.aboutpage{
+.contactpage{
     margin-top: 2vh;
     width: 100vw;
-    height: 80vw;
-    background-color: blueviolet;
+    height: 55vw;
+    background-color: #233142;
 }
-
+.lmao{
+    width: 100%;
+    font-family: 'Outfit';
+    color: #A5DEF1;
+    font-size: 1.5rem;
+    display: flex  ;
+    justify-content: center;
+    font-weight: 150;
+}
+.lmfao{
+    width: 100%;
+    font-family: 'Outfit';
+    color: #EBF7FD;
+    font-size: 2.5rem;
+    display: flex  ;
+    justify-content: center;
+    font-weight: 150;
+}
 /* about end */
 
 .footer{
