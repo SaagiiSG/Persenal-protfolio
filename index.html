@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="https://kit.fontawesome.com/ce59223707.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
     <title>Saagii</title>
 </head>
 <body>
@@ -19,17 +19,17 @@
             </div>
 
             <div id="button">
-                <div id="navbtn">home</div>
-                <div id="navbtn">about</div>
-                <!-- <div id="navbtn">experience</div> -->
-                <div id="navbtn">services</div>
-                <div id="navbtn">contact me</div>
+                <a href="#home" class="active">home</a>
+                <a href="#about" >about</a>
+                
+                <a href="#services">services</a>
+                <a href="#contactpage">contact me</a>
 
             </div>
        
     </section>  
 <!-- home section -->
-    <section class="home">
+    <section id="home">
         <div class="content">
             <div id="intro">
                 <div class="introword">
@@ -68,7 +68,7 @@
 <!-- home section end -->
 
 <!-- about section -->
-    <section class="about">
+    <section id="about">
         <div class="aboutcontainer">
             <h1>About me</h1>
         </div>
@@ -106,8 +106,8 @@
 <!-- experience section end -->
 
 <!-- services section  -->
-    <div class="srvcs"> Service </div>
-    <section class="services">
+    <div id="srvcs"> Service </div>
+    <section id="services">
         <div class="cards">
 
             <div id="smlcards">
@@ -153,13 +153,26 @@
 
 <!-- contact section -->
 
-    <section class="contactpage">
+    <section id="contactpage">
         <p class="lmao">get in touch</p>
         <h1 class="lmfao">Contact me</h1>
-        <div class="contact me">
+        <div class="contact_me">
+            <div class="namegmail">
+                <div class="name">
+                    <input type="text" placeholder="firstname" class="input">
+                    <input type="gmail" placeholder="gmail" class="input
+                    ">
+                </div>
+                <div class="write">
+                    <textarea type="text" placeholder="write something" class="writem"></textarea>
+                </div>
 
-           
-
+                <div class="outrobtncontainer">
+                    <button class="outrobtn">submit</button>
+                </div>
+                
+            </div>
+          
         </div>
 
     </section>
@@ -169,13 +182,27 @@
 <!-- footer -->
 
     <section class="footer">
+        <div class="lock">
+            <div id="logo">
+                <h1 id="saagii">Saagii</h1>  <h1 id="sg"> SG</h1>
+            </div>
+            <div class="links">
+                <i class="fab fa-facebook" onclick="facebook()"></i>
+                <i class="fab fa-instagram" onclick="instagram()"></i>
+                <i class="fab fa-twitch" onclick="twich()"></i>
+            </div>
+            <div class="date">
+                <p>saranochir.s@gmail.com</p>
+                <p>call me : 89989121</p>
+            </div>
+        </div>    
+                <div id="date"> 2023.5.21 </div>
         
-        
-
     </section>
 
 <!-- footer ends -->
 
-<script src="./script.js"></script>    
+    <script src="./script.js"></script>    
+    <script src="./scrollreveal.min.js "></script>
 </body>
 </html>

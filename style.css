@@ -18,6 +18,7 @@ white #ebf7fd 235, 247, 253
 *{
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 body{
     background-color: #233142 ;
@@ -67,7 +68,7 @@ body{
 
 }
 
-#navbtn{
+a{
     font-family: 'Outfit' , sans-serif;
     background-color: rgba(54, 80, 108, 0.0 ) ;
     border: none;
@@ -77,9 +78,12 @@ body{
     transition: 0.2s;
     display: flex;
     align-items: center;
+    text-decoration: none;
+    transition: 0.3s linear;
 }
-
-#navbtn:hover{
+section:nth-child(odd)
+a:hover, a.active{
+    text-decoration: none;
     font-family: 'Outfit' , sans-serif;
     color: #A5DEF1 ;
     border: none;
@@ -94,7 +98,7 @@ body{
     justify-content: space-evenly ;
 }
 
-.home{
+#home{
     margin-top: 2vh;
     width: 100vw;
     height: 45vw;
@@ -246,7 +250,7 @@ body{
     color: #EBF7FD;
     font-weight: 100;
 }
-.about{
+#about{
     margin-top: 3vh;
     width: 100vw;
     height: 70vw;
@@ -326,7 +330,7 @@ body{
 }
 #textII{
     width: 38%;
-    height: 60%;
+    height: 80%;
     font-family: 'Outfit';
     font-size: 1.8rem;
     color: #EBF7FD;
@@ -334,7 +338,7 @@ body{
     justify-content: flex-start;
     align-items: center;
 }
-.srvcs{
+#srvcs{
     margin-top: 10vh    ;
     width: 100%;
     font-family: 'Outfit';
@@ -344,7 +348,7 @@ body{
     display: flex;
     justify-content: center;
 }
-.services{
+#services{
     margin-top: 10vh;
     width: 100vw;
     height: 70vw;
@@ -605,11 +609,13 @@ body{
 }
 /* about */
 
-.contactpage{
+#contactpage{
     margin-top: 2vh;
     width: 100vw;
     height: 55vw;
     background-color: #233142;
+    display: flex;
+    flex-direction: column;
 }
 .lmao{
     width: 100%;
@@ -629,13 +635,179 @@ body{
     justify-content: center;
     font-weight: 150;
 }
+.contact_me{
+    margin-top: 3%;
+    margin-left: 10%;
+    width: 80%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+}
+.namegmail{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.name{
+    display: flex;
+    justify-content: space-between;
+}
+.input{
+    width: 47vh;
+    height: 3.3vw;
+    background-color: #36506C;
+    border: none;
+    color: #EBF7FD;
+    font-family: 'Outfit';
+    border-radius: .5rem;
+    padding-left: .5rem;
+    transition: .4s;
+
+}
+.input:focus{
+    transition: .4s;
+    background-color: rgba(165, 222, 241 , .4);
+}
+.write{
+  
+    width: 100%;
+    height: 60%;
+    background-color: #36506C;
+    border-radius: 1vw;
+    margin-top: 1vw;
+    display: flex;
+    justify-content: center;
+    
+}
+.writem{
+    padding-top: 1rem;
+    padding-left: 1rem;
+    width:100%;
+    height: 9%;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    color: #EBF7FD;
+    resize: none;
+    transition: .4s;
+}
+.writem:focus{
+    transition: .4s;
+    border: none;
+    width:100%;
+    height: 96.8%;
+    resize: none;
+    border: none;
+    color: #EBF7FD;
+    resize: none;
+    border-radius: 1rem;
+    background-color: rgba(165, 222, 241 , .4);
+    
+}
+.input::placeholder{
+    color: #EBF7FD;
+    
+}
+.writem::placeholder{
+    color: #EBF7FD;
+    font-family: 'Outfit';
+    font-size: 1rem;
+}
+.outrobtn{
+    margin-left: 1vw;
+    width: 13vw;
+    height: 4vw;
+    border-radius: 1.5vw;
+    background-color: #233142;
+    border: 0.25vw solid #36506C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #EBF7FD;
+    font-family: 'Outfit' ;
+    font-weight: 100;
+    font-size: 1.3rem;
+    transition: 0.3s;
+}
+.outrobtn:hover{
+    margin-left: 1vw;
+    width: 13vw;
+    height: 4vw;
+    border-radius: 1.5vw;
+    background-color: #233142;
+    border: 0.5vw solid #36506C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #EBF7FD;
+    font-family: 'Outfit' ;
+    font-weight: 200;
+    font-size: 1.6rem;
+    transition: 0.3s;
+    }
+.outrobtncontainer{
+    margin-top: 1rem;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+
+
+}
 /* about end */
 
 .footer{
-    margin-top: 2vh;
+    margin-top: 2rem;
     width: 100vw;
-    height: 4vw;
-    background-color: burlywood ;
+    height: 15vw;
+    background-color: #36506C ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
+.lock{
+    margin-top: 2rem;
+    width: 100vw;
+    height: 10vw;
+    background-color: #36506C ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.links{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
+    color: #233142;
+    font-size: 3rem;
+    transition: .25s linear;
 
+}
+.fa-facebook,.fa-instagram,.fa-twitter, .fa-twitch {
+    color: #EBF7FD;
+    font-size: 3rem;
+    transition: .25s linear;
+
+}
+.date{   
+    width: 15%;
+    height: 3vw;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: 'Outfit';
+    color: #EBF7FD;
+}
+#date{
+    font-family: 'Outfit';
+    color: #233142;
+    font-size: 1rem;
+
+}
